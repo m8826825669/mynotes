@@ -171,33 +171,6 @@ sudo apt install -y chrony
 ```
 
 ---
-
-# ⭐ Want me to generate a **full server initialization script**?
-
-I can generate a copy-paste script that configures:
-
-* Users & SSH keys
-* Firewall & security
-* Auto updates
-* Docker & runtime dependencies
-* Monitoring
-* Swap configuration
-* Hostname + MOTD
-* Backup setup
-* Essential services for your use case (Node, Python, PHP, Java, etc.)
-
-Just tell me:
-
-### 👉 What type of server are you building?
-
-* Web server
-* API server
-* Docker host
-* Database server
-* DevOps CI runner
-* AI/ML server
-* Something else?
-
 Nice — web server it is. Below is a ready-to-run **server initialization script** tailored for an Ubuntu Server that sets up a secure, production-ready **NGINX web server** with optional Let's Encrypt TLS, a deploy user, firewall, fail2ban, auto-updates, basic hardening, and a sample site. Paste and run as root (or with sudo). I explain what each part does afterwards.
 
 > ⚠️ Before running: edit the top of the script to set `DOMAIN`, `EMAIL`, and `DEPLOY_SSH_PUBKEY`. If you don't have a domain yet, leave `DOMAIN` blank — the script will still configure the server but skip obtaining TLS.
